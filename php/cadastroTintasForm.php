@@ -53,7 +53,7 @@
 
     <h3 class="titulos">Cadastro de tintas</h3>  
 
-	<form action="cadastrarPessoa.php" method="POST" enctype="multipart/form-data">
+	<form action="cadastroTintas.php" method="POST" enctype="multipart/form-data">
 		<div class="form-group">
 		  <label class="control-label">Nome *</label>  
 		<div class="col-md-8">
@@ -71,40 +71,28 @@
 		<div class="form-group">
 		  <label class="control-label">Foto *</label>  
 		<div class="col-md-8">
-		 <input type="text" name="foto" class="form-control" >
+		 <input type="file" name="foto" class="form-control" >
 		</div>
 		</div>
 		
 		<div class="form-group">
 		  <label class="control-label">Codigo *</label>  
 		<div class="col-md-8">
-		 <input type="file" name="codigo" class="form-control" >
+		 <input type="text" name="codigo" class="form-control" >
 		</div>
 		</div>
 
 		<div class="form-group">
-		  <label class="control-label">Litros *</label>  
-		<div class="col-md-8">
-		 <select name="litros" class="form-control">
-         
-        
-
-			 <?php
-					require_once("conexaoBanco.php");
-					$resultado=mysqli_query($conexao,$comando);
-					while($r = mysqli_fetch_assoc($resultado)){
-			
-					}
-
-			 ?>
-		 </select>
+		  <label class="control-label">Litros *</label>
+		  <div class="col-md-8">
+		  <input type="text" name="litros" class="form-control" >  
 		</div>
 		</div>
-		
+	
 		<div class="form-group">
 		<label class="control-label"></label>
 		<div class="col-md-8">
-			<button  class="btn btn-danger" type="reset">Cancelar</button>
+			<button  class="btn btn-danger" type="reset">Limpar</button>
 			<button  class="btn btn-success" type="submit">Cadastrar</button>			
 		</div>
 		</div>
@@ -129,17 +117,24 @@
 	<div class="col-md-8">
 	<table class="table">
 		<tr>
+			<th>Foto</th>
 			<th>Nome</th>
 			<th>Preço</th>
-			<th>Foto</th>
 			<th>Codigo</th>
 			<th>Litros</th>
 		</tr>
 		<?php
 
+            $comando="INSERT INTO tintas (foto, nome, preco, codigo, litros) 
+            VALUES ('".$idTinta."', '".$foto"', '".$nome."', ".$preco.", '".$codigo."', ".$litros." )";
+
+			echo $comando;
+
+			require_once("conexaoBanco.php");
+
 			if(isset($_GET['pesquisa']) &&  $_GET['pesquisa']!=""){
 				$pesquisa = $_GET['pesquisa'];
-				$comando = $comando . " WHERE p.nome LIKE '".$pesquisa."%'";
+				$comando = $comando . " WHERE nome LIKE '".$pesquisa."%'";
 			}
 			//echo $comando;
 			$resultado=mysqli_query($conexao, $comando);
@@ -156,8 +151,7 @@
 					echo "<tr>";
 					echo "<td><img class='imagensConsulta' src='../fotos/".$p['foto']."'></td>";
 					echo "<td>".$p['nome']."</td>";
-					echo "<td>".$p['preco']."</td>";
-					echo "<td>".$p['foto']."</td>";
+					echo "<td>".$p['preco']."</td>";					
 					echo "<td>".$p['codigo']."</td>";					
 					echo "<td>".$p['litros']."</td>";					
 							
