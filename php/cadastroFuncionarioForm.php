@@ -22,17 +22,18 @@
         <h1> Cadastro de Funcionario</h1>
         <form action="cadastroFuncionario.php" method="GET">
                      
-                <label for="nome">Usuario</label>
-                <input type="text" name="nome" id="nome">
+                <label for="nomeUsuario">Usuario</label>
+                <input type="text" name="nomeUsuario" id="nome">
                 <br> <br>
+                <label for="senha">Senha</label>
+                <input type="text" name="senha" id="nome">                
+                <br>  <br>
                 <label for="cpf">CPF</label>
                 <input type="text" name="cpf" id="cpf" maxlength="14">
                 <br> <br>
-                <label for="senha">Senha</label>
-                <input type="text" name="nome" id="nome">                
-                <br>  <br>
-                <label for="nome">Nome Completo </label>
-                <input type="text" name="nome" id="nome">
+                
+                <label for="nomeCompleto">Nome Completo </label>
+                <input type="text" name="nomeCompleto" id="nome">
                 <br> <br>
                 <button type="submit"> Cadastrar novo funcionario</button>
                 <br>  <br>
