@@ -15,6 +15,16 @@
 </head>
 <body>
 
+<a href="../index.html">
+<button>Voltar para o catálogo</button>
+</a>
+<a href="../php/comprasAndamentoFuncionarioForm.php">
+<button>Cadastro de Funcionario</button>
+</a>
+<a href="../php/cadastroTintasForm.php">
+<button>Compras em Andamento</button>
+</a>
+
 <div id="alertas">
     <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -55,35 +65,35 @@
 
 	<form action="cadastroTintas.php" method="POST" enctype="multipart/form-data">
 		<div class="form-group">
-		  <label class="control-label">Nome *</label>  
+		  <label class="control-label">Nome </label>  
 		<div class="col-md-8">
 		 <input type="text" name="nome" accept="image/*" class="form-control" >
 		</div>
 		</div>
 		
 		 <div class="form-group">
-		  <label class="control-label">Preço *</label>  
+		  <label class="control-label">Preço </label>  
 		<div class="col-md-8">
 		 <input type="text" name="preco" class="form-control" >
 		</div>
 		</div>
 		
 		<div class="form-group">
-		  <label class="control-label">Foto *</label>  
+		  <label class="control-label">Foto </label>  
 		<div class="col-md-8">
 		 <input type="file" name="foto" class="form-control" >
 		</div>
 		</div>
 		
 		<div class="form-group">
-		  <label class="control-label">Codigo *</label>  
+		  <label class="control-label">Codigo </label>  
 		<div class="col-md-8">
 		 <input type="text" name="codigo" class="form-control" >
 		</div>
 		</div>
 
 		<div class="form-group">
-		  <label class="control-label">Litros *</label>
+		  <label class="control-label">Litros </label>
 		  <div class="col-md-8">
 		  <input type="text" name="litros" class="form-control" >  
 		</div>
@@ -93,7 +103,7 @@
 		<label class="control-label"></label>
 		<div class="col-md-8">
 			<button  class="btn btn-danger" type="reset">Limpar</button>
-			<button  class="btn btn-success" type="submit">Cadastrar</button>			
+			<button  class="btn btn-success" type="submit">Cadastrar Tinta</button>			
 		</div>
 		</div>
 		
@@ -103,7 +113,7 @@
 	
 	<form action="#" method="GET">
 		<div class="form-group">
-		  <label class="control-label" for="textoPesquisa">Nome </label>  			
+		  <label class="control-label" for="textoPesquisa">Nome da tinta</label>  			
 			 <input class="form-control" id="textoPesquisa" type="text" name="pesquisa">
 			 <button type="submit" class="botaoAcao">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -124,11 +134,6 @@
 			<th>Litros</th>
 		</tr>
 		<?php
-
-            $comando="INSERT INTO tintas (foto, nome, preco, codigo, litros) 
-            VALUES ('".$idTinta."', '".$foto"', '".$nome."', ".$preco.", '".$codigo."', ".$litros." )";
-
-			echo $comando;
 
 			require_once("conexaoBanco.php");
 

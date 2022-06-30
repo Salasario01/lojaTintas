@@ -17,8 +17,8 @@ $pasta="../fotos/";
 
 move_uploaded_file($_FILES['foto']['tmp_name'], $pasta.$novoNomeFoto);
 
-$comando="INSERT INTO tintas (nome, preco, foto, codigo, litros) 
-VALUES ('".$nome."', ".$preco.", '".$novoNomeFoto."', '".$codigo."', ".$litros." )";
+$comando="INSERT INTO tintas (foto, nome, preco, codigo, litros) 
+VALUES ('".$idTinta."', '"$foto"', ".$nome.", '".$novoNomeFoto."', '".$codigo."', ".$litros." )";
 
 echo $comando;
 /*
