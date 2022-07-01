@@ -93,9 +93,6 @@
 		  
 		<div class="col-md-8">
 
-		</div>
-		</div>
-
         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
           <option selected>Em andamento</option>
           <option value="1">Enviado</option>

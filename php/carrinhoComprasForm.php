@@ -60,33 +60,27 @@
 		  <label class="control-label">Tinta 1 </label>  
 		<div class="col-md-8">
 		 <input type="text" name="nome" accept="image/*" class="form-control" >
-		</div>
-		</div>
+	
 
-        <select class="form-select" size="3" aria-label="size 3 select example">
-          <option selected>Escolha a quantidade de tintas:</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
+
+		<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <option selected>1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+          <option value="3">4</option>
         </select>
 		
 		 <div class="form-group">
 		  <label class="control-label">Tinta 2 </label>  
 		<div class="col-md-8">
 		 <input type="text" name="preco" class="form-control" >
-		</div>
-		</div>
 
-
-        <select class="form-select" size="3" aria-label="size 3 select example">
-          <option selected>Escolha a quantidade de tintas:</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
+		<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <option selected>1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+          <option value="3">4</option>
         </select>
-		
-	</form>
-
 
 <h3 class="titulos">Informações de entrega e Pagamento</h3>  
 
@@ -115,9 +109,6 @@
 		<div class="form-group">
 		  <label class="control-label">Método de pagamento </label>  
 		<div class="col-md-8">
-
-		</div>
-		</div>
 
         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
           <option selected>Escolha a forma de pagamento</option>
