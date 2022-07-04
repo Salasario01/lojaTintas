@@ -7,9 +7,15 @@ $cpf=$_POST['cpf'];
 $nomeCompleto=$_POST['nomeCompleto'];
 $nivel= 1;
 
-$idUsuario=array();
-$idUsuario=$_POST['idUsuario'];
+// $idUsuario=array();
+// $idUsuario=$_POST['idUsuario'];
 
 
+$comando="INSERT INTO usuarios (nomeUsuario, senha, cpf, nomeCompleto, nivel, )
+ VALUES ('".$nomeUsuario."', '".$senha."', '".$cpf."', '".$nomeCompleto."', '".$nivel."')";
 
-?>-
+echo $comando;
+
+// $resultado=mysqli_query($conexao, $comando);
+
+?>

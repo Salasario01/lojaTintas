@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,20 +20,19 @@
 
 <main>
         <h1> Cadastro de Funcionario</h1>
-        <form action="cadastroFuncionario.php" method="GET">
+        <form action="cadastroFuncionario.php" method="POST">
                      
-                <label for="nomeUsuario">Usuario</label>
-                <input type="text" name="nomeUsuario" id="nome">
+                <label >Usuario</label>
+                <input type="text" name="nomeUsuario" >
                 <br> <br>
-                <label for="senha">Senha</label>
-                <input type="text" name="senha" id="nome">                
+                <label >Senha</label>
+                <input type="text" name="senha" >                
                 <br>  <br>
-                <label for="cpf">CPF</label>
-                <input type="text" name="cpf" id="cpf" maxlength="14">
+                <label >CPF</label>
+                <input type="number" name="cpf"  maxlength="14">
                 <br> <br>
-                
-                <label for="nomeCompleto">Nome Completo </label>
-                <input type="text" name="nomeCompleto" id="nome">
+                <label >Nome Completo </label>
+                <input type="text" name="nomeCompleto" >
                 <br> <br>
                 <button type="submit"> Cadastrar novo funcionario</button>
                 <br>  <br>
