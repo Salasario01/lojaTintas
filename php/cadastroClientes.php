@@ -5,7 +5,7 @@ $nomeUsuario=$_POST['nomeUsuario'];
 $senha=$_POST['senha'];
 $cpf=$_POST['cpf'];
 $nomeCompleto=$_POST['nomeCompleto'];
-$nivel= 1;
+$nivel= 2;
 
 $comando="INSERT INTO usuarios (nomeUsuario, senha, cpf, nomeCompleto, nivel )
  VALUES ('".$nomeUsuario."', '".$senha."', '".$cpf."', '".$nomeCompleto."', '".$nivel."')";
