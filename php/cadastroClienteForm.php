@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../style/cadastroCliente.css">
 </head>
 <body>
         <form class="formUser">
@@ -16,11 +16,19 @@
                 <br>
                 <input type="text" class="input">
                 <br>
+                <label class="label" >CPF</label>
+                <br>
+                <input type="text" class="input">
+                <br>
                 <label class="label" >Senha</label>
                 <br>
                 <input type="password" class="input">
                 <br>
-                <p>Já tem uma conta?<a href="/pags/login.html"> Faça Login</a></p>
+                <label class="label" >Nome Completo</label>
+                <br>
+                <input type="password" class="input">
+                <br>
+                <p>Já tem uma conta?<a href="../php/loginForm.php"> Faça Login</a></p>
                 <button type="button" class="btn">
                     <a class="btnEntrar" href="/index.html">
                         Entrar

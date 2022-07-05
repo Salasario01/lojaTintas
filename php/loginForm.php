@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../style/login.css">
 </head>
 <body>
     <form class="formUser">
@@ -20,7 +20,7 @@
             <br>
             <input type="password" class="input">
             <br>
-            <p>Ainda não tem uma conta?<a href="/pags/cadastro.html"> Cadastre-se</a></p>
+            <p>Ainda não tem uma conta?<a href="../php/cadastroClienteForm.php"> Cadastre-se</a></p>
             <button type="button" class="btn">
                 <a class="btnEntrar" href="/index.html">
                     Entrar

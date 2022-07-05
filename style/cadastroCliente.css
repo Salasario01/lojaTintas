@@ -1,0 +1,31 @@
+body{
+    background-color: #2b78e4;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.formUser{
+    background-color: #2b78e4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.info{
+    border: 3px solid #fff;
+    text-align: center;
+    margin-top: 5vh ;
+    margin-bottom: 5vh ;
+    margin-left: 50px ;
+    margin-right: 50px ;
+    padding: 0px 50px 50px 50px;
+    color: #fff;
+
+}
+.input{
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 0px;
+    width: max-content 100px;
+    width: min-content 100px;
+}
