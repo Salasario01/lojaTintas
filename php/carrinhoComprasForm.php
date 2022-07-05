@@ -55,25 +55,26 @@
 <fieldset >
 <legend>Carrinho de compras </legend>
 
-	<form action="cadastroTintas.php" method="POST" enctype="multipart/form-data">
-		<div class="form-group">
+     	<form action="cadastroTintas.php" method="POST" enctype="multipart/form-data">
+		  <div class="form-group">
 		  <label class="control-label">Tinta 1 </label>  
-		<div class="col-md-8">
+		  <div class="col-md-8">
+
 		 <input type="text" name="nome" accept="image/*" class="form-control" >
-	
      <label for="points"></label>
-  <input type="number"  name="preco1" step="1" min="1" max="50">
-  <input type="submit">
+
+     <input type="number"  name="preco1" step="1" min="1" max="50">
+     <input type="submit">
 		
 		 <div class="form-group">
-		  <label class="control-label">Tinta 2 </label>  
-		<div class="col-md-8">
+		 <label class="control-label">Tinta 2 </label>  
+		 <div class="col-md-8">
 		 <input type="text" name="preco" class="form-control" >
-
      <label for="points"></label>
-  <input type="number"  name="preco2" step="1" min="1" max="50">
-  <input type="submit">
-        </fieldset>
+     <input type="number"  name="preco2" step="1" min="1" max="50">
+     <input type="submit">
+     </fieldset>
+     
 <h3 class="titulos">Informações de entrega e Pagamento</h3>  
 
 	<form action="cadastroTintas.php" method="POST" enctype="multipart/form-data">

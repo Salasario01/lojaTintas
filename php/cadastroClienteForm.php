@@ -7,8 +7,42 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="../style/cadastroCliente.css">
 </head>
+<div id="alertas">
+    <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <span>Houve algum problema em se cadastrar ! porfavor tente novamente! </span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <span>Cadastro realizado com sucesso ! </span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==2){ ?>
+	<div class="alert alert-success alert-dismissible fade show" role="alert">
+        <span>Relação excluída com sucesso!</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+	<?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==3){ ?>
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <span>Não é possível excluir uma relação associada a pessoas!</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+	<?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==4){ ?>
+	<div class="alert alert-success alert-dismissible fade show" role="alert">
+        <span>Relação editada com sucesso!</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+	<?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==5){ ?>
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+		<span>Houve algum problema editar a relação!</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+	<?php } ?>
+</div>
 <body>
-        <form class="formUser">
+        <form  action="cadastroClientes.php" method="POST" class="formUser">
             <div class="info">
                 <h1>Cadastro</h1>
                 <br>
@@ -28,17 +62,16 @@
                 <br>
                 <input type="password" class="input">
                 <br>
-                <p>Já tem uma conta?<a href="../php/loginForm.php"> Faça Login</a></p>
-                <button type="button" class="btn">
-                    <a class="btnEntrar" href="/index.html">
-                        Entrar
-                    </a>
+                </div>
+                <button type="submit" class="btn">
+               
                 </button>
+                </form>
+
+                <p>Já tem uma conta?<a href="../php/loginForm.php"> Faça Login</a></p>
                 
                 
-    
-            </div>
-        </form>
+
         <div class="footer">
             <footer>
                 <p>Todos os direitos reservados - 2022 &copy;</p>
