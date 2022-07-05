@@ -52,8 +52,8 @@
 
 	<?php } ?>
 </div>
-
-<h3 class="titulos">Carrinho</h3>  
+<fieldset >
+<legend>Carrinho de compras </legend>
 
 	<form action="cadastroTintas.php" method="POST" enctype="multipart/form-data">
 		<div class="form-group">
@@ -61,27 +61,19 @@
 		<div class="col-md-8">
 		 <input type="text" name="nome" accept="image/*" class="form-control" >
 	
-
-
-		<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-          <option selected>1</option>
-          <option value="1">2</option>
-          <option value="2">3</option>
-          <option value="3">4</option>
-        </select>
+     <label for="points"></label>
+  <input type="number"  name="preco1" step="1" min="1" max="50">
+  <input type="submit">
 		
 		 <div class="form-group">
 		  <label class="control-label">Tinta 2 </label>  
 		<div class="col-md-8">
 		 <input type="text" name="preco" class="form-control" >
 
-		<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-          <option selected>1</option>
-          <option value="1">2</option>
-          <option value="2">3</option>
-          <option value="3">4</option>
-        </select>
-
+     <label for="points"></label>
+  <input type="number"  name="preco2" step="1" min="1" max="50">
+  <input type="submit">
+        </fieldset>
 <h3 class="titulos">Informações de entrega e Pagamento</h3>  
 
 	<form action="cadastroTintas.php" method="POST" enctype="multipart/form-data">
