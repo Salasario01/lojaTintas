@@ -136,12 +136,14 @@
 		<?php
 
 			require_once("conexaoBanco.php");
+            $comando="SELECT p.*, r.descricao FROM tintas p INNER JOIN relacoes r ON 
+			p.relacoes_idRelacao=r.idRelacao";
 
 			if(isset($_GET['pesquisa']) &&  $_GET['pesquisa']!=""){
 				$pesquisa = $_GET['pesquisa'];
 				$comando = $comando . " WHERE nome LIKE '".$pesquisa."%'";
 			}
-			//echo $comando;
+			echo $comando;
 			$resultado=mysqli_query($conexao, $comando);
             $tintasRetornadas= array();
 			$linhas=mysqli_num_rows($resultado);
