@@ -10,35 +10,20 @@
 <div id="alertas">
     <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <span>Houve algum problema em se cadastrar ! porfavor tente novamente! </span>
+        <span>Ja existe Usuario com esse nome no, por favor tente outro Usuario !</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
     <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
     <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <span>Cadastro realizado com sucesso ! </span>
+        <span>Houve algum erro ao se cadastrar !  </span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
-    <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==2){ ?>
+  
+    <?php } else if(isset($_GET['retorno'])==true && $_GET['retorno']==2){ ?>
 	<div class="alert alert-success alert-dismissible fade show" role="alert">
-        <span>Relação excluída com sucesso!</span>
+        <span>U</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
-	<?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==3){ ?>
-	<div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <span>Não é possível excluir uma relação associada a pessoas!</span>
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-    </div>
-	<?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==4){ ?>
-	<div class="alert alert-success alert-dismissible fade show" role="alert">
-        <span>Relação editada com sucesso!</span>
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-    </div>
-	<?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==5){ ?>
-	<div class="alert alert-warning alert-dismissible fade show" role="alert">
-		<span>Houve algum problema editar a relação!</span>
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-    </div>
-
 	<?php } ?>
 </div>
 <body>
@@ -48,7 +33,7 @@
                 <br>
                 <label class="label" >Usuário</label>
                 <br>
-                <input type="text" class="input">
+                <input required type="text" class="input">
                 <br>
                 <label class="label" >CPF</label>
                 <br>
@@ -62,6 +47,9 @@
                 <br>
                 <input type="password" class="input">
                 <br>
+                <button type="submit" class="btn">
+               
+               </button>
                 </div>
                 <button type="submit" class="btn">
                

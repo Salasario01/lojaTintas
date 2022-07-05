@@ -7,17 +7,29 @@ $cpf=$_POST['cpf'];
 $nomeCompleto=$_POST['nomeCompleto'];
 $nivel= 2;
 
-$comando="INSERT INTO usuarios (nomeUsuario, senha, cpf, nomeCompleto, nivel )
- VALUES ('".$nomeUsuario."', '".$senha."', '".$cpf."', '".$nomeCompleto."', '".$nivel."')";
-
-echo $comando;
-
+$comando="SELECT * FROM usuarios WHERE nomeUsuario='".$nomeUsuario."'";
 $resultado=mysqli_query($conexao, $comando);
-if($resultado){
-    header("Location: loginForm.php?retorno=1");
+$linhas=mysqli_num_rows($resultado);
+
+if($linhas>0){ //se já tiver um usuário igual no banco
+    header("Location: CadastroClienteForm.php?retorno=0");
 }else{
-    header("Location: cadastroClienteForm.php?retorno=0");
+
+        $comando="INSERT INTO usuarios (nomeUsuario, senha, cpf, nomeCompleto, nivel )
+        VALUES ('".$nomeUsuario."', '".$senha."', '".$cpf."', '".$nomeCompleto."', '".$nivel."')";
+
+        echo $comando;
+
+        $resultado=mysqli_query($conexao, $comando);
+        if($resultado){// quando da certo o cadastro !
+            header("Location: loginForm.php?retorno=1");
+        }else{ //quando não da certo o cadastro do cliente por motivo aleatorio 
+            header("Location: CadastroClienteForm.php?retorno=1");
+        }
+
 }
+
+
 
 
 ?>

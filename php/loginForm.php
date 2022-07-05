@@ -7,6 +7,27 @@
     <title>Login</title>
     <link rel="stylesheet" href="../style/login.css">
 </head>
+<div id="alertas">
+    <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <span>Houve algum problema em se cadastrar ! porfavor tente novamente! </span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <span>Cadastro realizado com sucesso ! </span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+  
+    <?php } else if(isset($_GET['retorno'])==true && $_GET['retorno']==2){ ?>
+	<div class="alert alert-success alert-dismissible fade show" role="alert">
+        <span>U</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    
+	<?php } ?>
+</div>
+
 <body>
     <form class="formUser">
         <div class="info">
