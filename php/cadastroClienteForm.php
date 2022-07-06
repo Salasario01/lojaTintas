@@ -10,24 +10,19 @@
 <div id="alertas">
     <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-<<<<<<< HEAD
-        <span>Ja existe Usuario com esse nome, por favor tente outro Usuario !</span>
-=======
-        <span>Ja existe Usuario com esse nome nome, por favor tente outro Usuario !</span>
->>>>>>> d7548b8c0fb5114dab47e0dc72f73a8f64d9d37d
+        <span>Ja existe um usuario com esse nome, por favor tente outro !</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
     <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
     <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <span>Houve algum erro ao se cadastrar !  </span>
+        <span>houve algum erro ao se cadastrar !</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
-  
-    <?php } else if(isset($_GET['retorno'])==true && $_GET['retorno']==2){ ?>
+    <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==2){ ?>
 	<div class="alert alert-success alert-dismissible fade show" role="alert">
-        <span>U</span>
+        <span>Houve algum erro ao cadastrar um novo funcionario !</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-    </div>
+    
 	<?php } ?>
 </div>
 <body>
