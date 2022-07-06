@@ -22,9 +22,9 @@ VALUES ('".$novoNomeFoto."', '".$nome."', '".$preco."', '".$codigo."', ".$litros
 
 $resultado=mysqli_query($conexao, $comando);
 if($resultado){
-    header("Location: tintaForm.php?retorno=1");
+    header("Location: cadastroTintasForm.php?retorno=1");
 }else{
-    header("Location: tintaForm.php?retorno=0");
+    header("Location: cadastroTintasForm.php?retorno=0");
 }
 
 
