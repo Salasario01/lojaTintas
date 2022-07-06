@@ -10,7 +10,7 @@
 <div id="alertas">
     <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <span>Ja existe Usuario com esse nome no, por favor tente outro Usuario !</span>
+        <span>Ja existe Usuario com esse nome nome, por favor tente outro Usuario !</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
     <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
