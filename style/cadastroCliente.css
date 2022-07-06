@@ -15,10 +15,7 @@ body{
     border: 3px solid #fff;
     text-align: center;
     margin-top: 5vh ;
-    margin-bottom: 5vh ;
-    margin-left: 50px ;
-    margin-right: 50px ;
-    padding: 0px 50px 50px 50px;
+    padding: 15px;
     color: #fff;
 
 }
@@ -26,6 +23,22 @@ body{
     margin-top: 10px;
     border-radius: 3px;
     border: 0px;
-    width: max-content 100px;
-    width: min-content 100px;
+}
+p{
+    text-align: center;
+}
+.btn{
+    border-radius: 2px;
+    border: 1px solid #000;
+    background-color: #2b78e4;
+    width: 50px;
+    margin-top: 4px;
+}
+.btn:hover{
+    width: 75px;
+    transition: 200ms;
+    padding: 10px;
+    background-color: #1164da;
+    border-radius: 4px;
+
 }
