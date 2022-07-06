@@ -10,7 +10,7 @@
 <div id="alertas">
     <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <span>Ja existe Usuario com esse nome no, por favor tente outro Usuario !</span>
+        <span>Ja existe Usuario com esse nome, por favor tente outro Usuario !</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
     <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
@@ -48,23 +48,15 @@
                 <input type="password" class="input">
                 <br>
                 <button type="submit" class="btn">
-               
+                    Enviar
                </button>
                 </div>
-                <button type="submit" class="btn">
-               
-                </button>
-                </form>
+        </form>
 
                 <p>Já tem uma conta?<a href="../php/loginForm.php"> Faça Login</a></p>
                 
                 
 
-        <div class="footer">
-            <footer>
-                <p>Todos os direitos reservados - 2022 &copy;</p>
-            </footer>
-        </div>
     </html>
 </body>
 </html>
