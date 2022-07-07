@@ -2,9 +2,9 @@
 
 require_once ("conexaoBanco.php");
 
+$novoNomeFoto=$_POST['novoNomeFoto'];
 $nome=$_POST['nome'];
 $preco=$_POST['preco'];
-$codigo=$_POST['codigo'];
 $foto=$_FILES['foto']['name'];
 $litros=$_POST['litros'];
 
