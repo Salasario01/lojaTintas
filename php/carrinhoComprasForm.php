@@ -54,18 +54,19 @@
 </div>
 <fieldset>
   <legend>Carrinho de compras</legend>
-    <select name="nomeProduto">
-     <?php
-      require_once("conexaoBanco.php");
-      $comando="SELECT * FROM tintas ORDER BY name ASC";
-      $resultado=mysql_query($comando, $conexao);
-      while($dados=mysql_fetch_array($resultado)){
-          $nome=$dados['nome'];
-          $preco=$dados['preco'];
-          echo"<option value='$preco'>$nome</option>";
-      };
-     ?>
-    </select>
+
+  <select class="form-control" name="nome_fantasia">
+  <option></option>
+    <?php 
+        require_once("conexaoBanco.php");
+       $comando = "SELECT nome FROM tintas";
+       $resultado = mysqli_query($conexao, $comando);
+       while($dados = mysqli_fetch_assoc($resultado)) {
+         echo '<option value="'.$dados['nome'].'"> '.$dados['nome'].' </option>';
+       }
+    ?>
+</select>
+    
  </fieldset>
 </body>
 </html>
