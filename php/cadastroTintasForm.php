@@ -15,13 +15,13 @@
 <body>
 
 <a href="../index.html">
-<button>Voltar para o catálogo</button>
+<button id="btn1">Voltar para o catálogo</button>
 </a>
 <a href="../php/comprasAndamentoFuncionarioForm.php">
-<button>Cadastro de Funcionario</button>
+<button id="btn2">Cadastro de Funcionario</button>
 </a>
 <a href="../php/cadastroTintasForm.php">
-<button>Compras em Andamento</button>
+<button id="btn3">Compras em Andamento</button>
 </a>
 
 <div id="alertas">

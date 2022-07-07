@@ -2,3 +2,23 @@
     width:20px;
     height:20px;
 }
+body{
+    background-color: #2b78e4;
+}
+.titulos{
+    text-align: center;
+}
+#btn1{
+ background-color: green;
+ border: 2px solid black;
+ margin: 10px 0px 5px 10px;
+ 
+}
+#btn2{
+    background-color: yellow;
+    border: 2px solid black;
+}
+#btn3{
+    background-color: aqua;
+    border: 2px solid black;
+}

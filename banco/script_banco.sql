@@ -66,5 +66,15 @@ CREATE TABLE IF NOT EXISTS `lojatintas`.`tintas_has_compras` (
     REFERENCES `lojatintas`.`compras` (`idCompra`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
+
+INSERT INTO `tintas` (`idTinta`, `nome`, `preco`, `foto`, `codigo`, `litros`) 
+VALUES (NULL, 'Tinta-Amarela Coral ', '160.00', '2022.07.08-01.33.07.jpg', '1', '10'),
+(NULL, 'Tinta-Azul Coral', '180.00', '2022.07.08-01.34.06.jpg', '2', '10'),
+(NULL, 'Tinta-Bege Suvinil', '120.00', '2022.07.08-01.34.45.jpg', '3', '10'),
+(NULL, 'Tinta-Cinza Coral', '135.00', '2022.07.08-01.35.38.jpg', '4', '10'),
+(NULL, 'Tinta-Laranja Suvinil', '159.00', '2022.07.08-01.36.35.jpg', '5', '10'),
+(NULL, 'Tinta-Preta Novacor', '129.00', '2022.07.08-01.37.11.jpg', '6', '10'),
+(NULL, 'Tinta-Verde-Água Suvinil', '209.00', '2022.07.08-01.37.53.jpg', '7', '10'),
+(NULL, 'Tinta-Vermelha Novacor', '165.00', '2022.07.08-01.38.37.jpg', '8', '10')    
 ENGINE = InnoDB;
 
