@@ -4,7 +4,7 @@ require_once("conexaoBanco.php");
 
 $idTinta=$_POST['idTinta'];
 
-$vercadastro="SELECT * FROM cadastro_tintas WHERE 
+$vercadastro="SELECT * FROM tintas WHERE 
 tintas_idTinta=".$idTinta;
 
 $resultadocadastro = mysqli_query($conexao, $vercadastro);
