@@ -42,7 +42,7 @@
     </div>
 	<?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==3){ ?>
 	<div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <span>Não é possível excluir uma tinta associada a compromissos!</span>
+        <span>Não é possível excluir uma tinta associada a vendas!</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
 	<?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==4){ ?>

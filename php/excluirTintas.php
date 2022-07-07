@@ -4,14 +4,13 @@ require_once("conexaoBanco.php");
 
 $idTinta=$_POST['idTinta'];
 
-$vercadastro="SELECT * FROM tintas WHERE 
-tintas_idTinta=".$idTinta;
+$vercadastro="SELECT * FROM tintas_has_compras WHERE tintas_idTinta=".$idTinta;
 
 $resultadocadastro = mysqli_query($conexao, $vercadastro);
 $linhas=mysqli_num_rows($resultadocadastro);
 
 if($linhas==0){
-    $comandoFoto="SELECT foto FROM pessoas WHERE idTinta=".$idTinta;
+    $comandoFoto="SELECT foto FROM tintas WHERE idTinta=".$idTinta;
     $resultadoFoto=mysqli_query($conexao, $comandoFoto);
     $foto=mysqli_fetch_assoc($resultadoFoto);
     if($foto['foto']!=""){ //se a tinta tem foto...
