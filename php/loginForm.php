@@ -29,21 +29,21 @@
 </div>
 
 <body>
-    <form class="formUser">
+    <form class="formUser" action="php/autenticacao.php" method="POST">
         <div class="info">
             <h1>Login</h1>
             <br>
             <label class="label" >Usuário</label>
             <br>
-            <input type="text" class="input">
+            <input type="text" name="nomeUsuario" class="input">
             <br>
             <label class="label" >Senha</label>
             <br>
-            <input type="password" class="input">
+            <input type="password" name="senha" class="input">
             <br>
             <p>Ainda não tem uma conta?<a href="../php/cadastroClienteForm.php"> Cadastre-se</a></p>
-            <button type="button" class="btn">
-                <a class="btnEntrar" href="/index.html">
+            <button type="submit" class="btn">
+                <a class="btnEntrar" href="/index.php">
                     Entrar
                 </a>
             </button>
@@ -52,6 +52,7 @@
 
     </div>
     </form>
+
     <div class="footer">
         <footer>
             <p>Todos os direitos reservados - 2022 &copy;</p>
