@@ -13,16 +13,19 @@
     $linhas=mysqli_num_rows($resultado);
 
     if($linhas==0){
+        // se o login não existir no no banco
         header("location: ../index.php?retorno=1");
     }else{
         $usuario=mysqli_fetch_assoc($resultado);
         session_start();
         $_SESSION['nivel']=$usuario['nivel'];
 
-        if($usuario['nivel']=='1'){    
-            header("Location: principalsecretaria.php");
+        if($usuario['nivel']=='1'){ 
+            //se ele for funcionario    
+            header("Location: cadastroFuncionarioForm.php");
         }else{
-            header("Location: principalExecutivo.php");
+            //se ele for cliente 
+            header("Location: carrinhoComprasForm.php");
         }
     }
 
