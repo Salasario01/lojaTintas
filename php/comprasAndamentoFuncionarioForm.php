@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	
+	if(isset($_SESSION['nivel']) && $_SESSION['nivel']=="1"){
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -136,3 +144,11 @@
 			 </button>			 
 		</div>
 	</form>
+
+	<?php 
+
+}else{
+	header("Location: alertaEfetuarLogin.html");
+}
+
+?>
