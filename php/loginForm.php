@@ -29,7 +29,7 @@
 </div>
 
 <body>
-    <form class="formUser" action="php/autenticacao.php" method="POST">
+    <form class="formUser" action="autenticacao.php" method="POST">
         <div class="info">
             <h1>Login</h1>
             <br>
@@ -42,10 +42,8 @@
             <input type="password" name="senha" class="input">
             <br>
             <p>Ainda não tem uma conta?<a href="../php/cadastroClienteForm.php"> Cadastre-se</a></p>
-            <button type="submit" class="btn">
-                <a class="btnEntrar" href="/index.php">
-                    Entrar
-                </a>
+            <button type="submit" class="btn"> Entrar
+                
             </button>
             
             
