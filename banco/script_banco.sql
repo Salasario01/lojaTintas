@@ -75,6 +75,10 @@ VALUES (NULL, 'Tinta-Amarela Coral ', '160.00', '2022.07.08-01.33.07.jpg', '1', 
 (NULL, 'Tinta-Laranja Suvinil', '159.00', '2022.07.08-01.36.35.jpg', '5', '10'),
 (NULL, 'Tinta-Preta Novacor', '129.00', '2022.07.08-01.37.11.jpg', '6', '10'),
 (NULL, 'Tinta-Verde-Água Suvinil', '209.00', '2022.07.08-01.37.53.jpg', '7', '10'),
-(NULL, 'Tinta-Vermelha Novacor', '165.00', '2022.07.08-01.38.37.jpg', '8', '10')    
+(NULL, 'Tinta-Vermelha Novacor', '165.00', '2022.07.08-01.38.37.jpg', '8', '10')  
+
+INSERT INTO `usuarios` (`idUsuario`, `nomeUsuario`, `senha`, `nivel`, `nomeCompleto`, `cpf`) 
+VALUES (NULL, 'Gabriel123', '123456', '1', 'Gabriel Salasario', '41140342002'),
+(NULL, 'Felipe', '123456', '2', 'felipe prim', '96285459061')
 ENGINE = InnoDB;
 
