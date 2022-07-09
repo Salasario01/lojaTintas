@@ -5,7 +5,7 @@
 
 
 ?>
-]<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -51,10 +51,10 @@
                 <input required type="text" name="nomeUsuario" >
                 <br> <br>
                 <label >Senha</label>
-                <input required type="text" name="senha" >                
+                <input required type="password" name="senha" >                
                 <br>  <br>
                 <label >CPF</label>
-                <input required type="number" name="cpf"  maxlength="14">
+                <input required type="number" name="cpf"  maxlength="11" minlength="11"  >
                 <br> <br>
                 <label >Nome Completo </label>
                 <input required type="text" name="nomeCompleto" >

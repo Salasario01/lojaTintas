@@ -1,5 +1,5 @@
 <?php
-require_once("conexaoBanco.php")
+require_once("conexaoBanco.php");
 
 
 

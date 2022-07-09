@@ -61,7 +61,7 @@
 	<?php } ?>
 </div>
 
-<form  action="/carrinhoCompras.php" method="POST">
+<form  action="carrinhoCompras.php" method="POST">
 <fieldset>
   <legend>Carrinho de compras</legend>
    <div id="tintas"> 
@@ -96,11 +96,6 @@
         </div>
     </div>
     </fieldset>
-    //outros campos...
-    metodoPagamento
-	cep	
-    numero	
-    observacao	
     <fieldset>
      <legend>Carrinho de compras</legend>
     <div>
@@ -111,14 +106,14 @@
           <option value="credito">Credito</option>
           </select>
           <br> <br>
-          <label >Senha</label>
-          <input required type="text" name="senha" >                
+          <label >Cep</label>
+          <input required type="text" name="cep" minlength="8" maxlength="8">                
           <br>  <br>
-          <label >CPF</label>
-          <input required type="number" name="cpf"  maxlength="14">
+          <label >numero</label>
+          <input required type="number" name="numero" maxlength="3" minlength="1" >
           <br> <br>
-          <label >Nome Completo </label>
-          <input required type="text" name="nomeCompleto" >
+          <label >observacao </label>
+          <input required type="text" name="observacao" >
           <br> <br>
 
 
