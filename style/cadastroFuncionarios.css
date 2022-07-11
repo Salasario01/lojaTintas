@@ -1,10 +1,5 @@
 body{
-    background-color: #2b78e4;
-    font-family: cursive;
-}
-main{
-    border: 2px solid #fff;
-    margin: 10px 0px 10px 0px;
+    background-color: #227afd;
 }
 #btn1{
     background-color: green;
@@ -15,11 +10,31 @@ main{
 #btn3{
     background-color: rgb(19, 221, 221);
 }
-form{
+
+.info{
     text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    background-color: #227afd;
+    display: flexbox;
     border: 2px solid #fff;
-    margin: 10px 100px 10px 100px;
+    justify-content: center;
+}
+html{
+    background-color: #227afd;
+    color: #fff;
+}
+#title{
+    background-color: #227afd;
+    margin-top: 0px;
+    text-align: center;
+    color: #fff;
+}
+.btn{
+    border: 1px solid #000;
+    color: #fff;
+}
+input{
+    color: #fff;
+}
+label{
+    color: #fff;
 }

@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/cadastroFuncionarios.css">
     <title>CadastroFuncionarioForm</title>
 </head>
@@ -44,24 +45,31 @@
 <button id="btn3">Cadastro de tintas</button>
 </a>
 
+         <h1 id="title">Cadastro De Funcionarios</h1>
 
-        <h1> Cadastro de Funcionario</h1>
-        <form action="cadastroFuncionario.php" method="POST">
-                     
-                <label >Usuario</label>
+        <form class="formulario" action="cadastroFuncionario.php" method="POST">
+
+            <div class="info"> 
+
+                <label >Usuário</label>
+                <br>
                 <input required type="text" name="nomeUsuario" >
                 <br> <br>
                 <label >Senha</label>
+                <br>
                 <input required type="password" name="senha" >                
                 <br>  <br>
                 <label >CPF</label>
+                <br>
                 <input required type="number" name="cpf"  maxlength="11" minlength="11"  >
                 <br> <br>
                 <label >Nome Completo </label>
+                <br>
                 <input required type="text" name="nomeCompleto" >
                 <br> <br>
-                <button type="submit"> Cadastrar novo funcionario</button>
+                <button class="btn" type="submit"> Cadastrar novo funcionario</button>
                 <br>  <br>
+            </div>
         </form>
     
 </body>
