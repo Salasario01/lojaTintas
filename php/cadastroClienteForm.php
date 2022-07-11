@@ -33,19 +33,19 @@
                 <br>
                 <label class="label" >Usuário</label>
                 <br>
-                <input required type="text" class="input">
+                <input required name="nomeUsuario" type="text" class="input">
                 <br>
                 <label class="label" >CPF</label>
                 <br>
-                <input required type="text" class="input">
+                <input required name="cpf" type="text" class="input">
                 <br>
                 <label class="label" >Senha</label>
                 <br>
-                <input required type="password" class="input">
+                <input required name="senha" type="password" class="input">
                 <br>
                 <label class="label" >Nome Completo</label>
                 <br>
-                <input required type="password" class="input">
+                <input required name="nomeComplet" type="password" class="input">
                 <br>
                 <button type="submit" class="btn">
                     Enviar
