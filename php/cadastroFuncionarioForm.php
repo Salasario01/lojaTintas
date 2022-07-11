@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/cadastroFuncionarios.css">
     <title>CadastroFuncionarioForm</title>
 </head>
 <div id="alertas">
@@ -33,17 +34,17 @@
 </div>
 <body>
 
-<a href="../index.html">
-<button>Voltar ao catalogo</button>
+<a href="../index.php">
+<button id="btn1">Voltar ao catalogo</button>
 </a>
 <a href="../php/comprasAndamentoFuncionarioForm.php">
-<button>Compras em andamento</button>
+<button id="btn2">Compras em andamento</button>
 </a>
 <a href="../php/cadastroTintasForm.php">
-<button>Cadastro de tintas</button>
+<button id="btn3">Cadastro de tintas</button>
 </a>
 
-<main>
+
         <h1> Cadastro de Funcionario</h1>
         <form action="cadastroFuncionario.php" method="POST">
                      
@@ -62,7 +63,7 @@
                 <button type="submit"> Cadastrar novo funcionario</button>
                 <br>  <br>
         </form>
-    </main>
+    
 </body>
 </html>
 <?php 

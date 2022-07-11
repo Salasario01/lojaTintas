@@ -6,3 +6,20 @@ main{
     border: 2px solid #fff;
     margin: 10px 0px 10px 0px;
 }
+#btn1{
+    background-color: green;
+}
+#btn2{
+    background-color: yellow;
+}
+#btn3{
+    background-color: rgb(19, 221, 221);
+}
+form{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #fff;
+    margin: 10px 100px 10px 100px;
+}
