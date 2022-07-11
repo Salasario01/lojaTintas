@@ -14,7 +14,7 @@
 
     if($linhas==0){
         // se o login não existir no no banco
-        header("location: ../index.php?retorno=1");
+        header("location: ../loginFomr.php?retorno=2");
     }else{
         $usuario=mysqli_fetch_assoc($resultado);
         session_start();

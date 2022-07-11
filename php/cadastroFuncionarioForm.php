@@ -17,7 +17,7 @@
     <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <span>Usuario com esse nome ja existe !</span>
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <button type="alert" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
     <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
     <div class="alert alert-success alert-dismissible fade show" role="alert">
