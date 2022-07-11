@@ -1,0 +1,28 @@
+body{
+    background-color: #2b78e4;
+    color: #fff;
+}
+.selectTintas{
+    border-radius: 10px;
+    width: 250px;
+
+}
+select{
+    border: 0px;
+    border-radius: 5px;
+}
+input{
+    color: black;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 0px;
+}
+fieldset{
+    margin: 10px 5px 5px 10px;
+}
+label{
+    margin-left: 5px;
+}
+.btn{
+    margin: 5px;
+}
