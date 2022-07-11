@@ -21,8 +21,8 @@
   
     <?php } else if(isset($_GET['retorno'])==true && $_GET['retorno']==2){ ?>
 	<div class="alert alert-success alert-dismissible fade show" role="alert">
-        <span>U</span>
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <span>esse login não existe, ou algum campo esta incompleto !</span>
+        <button type="alert" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
     
 	<?php } ?>
