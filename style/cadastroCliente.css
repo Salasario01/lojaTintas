@@ -1,45 +1,24 @@
 body{
-    background-color: #2b78e4;
-    font-family: cursive;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.formUser{
-    background-color: #2b78e4;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    background-color: #227afd;
 }
 .info{
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     text-align: center;
-    margin-top: 5vh ;
-    padding: 15px;
-    color: #fff;
-
-}
-.input{
-    margin-top: 10px;
-    border-radius: 3px;
-    border: 0px;
+    margin: 10px;
 }
 p{
     text-align: center;
 }
-.btn{
-    border-radius: 2px;
-    border: 1px solid #000;
-    background-color: #2b78e4;
-    width: 50px;
-    margin-top: 4px;
+body{
     color: #fff;
 }
-.btn:hover{
-    width: 75px;
-    transition: 200ms;
-    padding: 10px;
-    background-color: #1164da;
-    border-radius: 4px;
-
+input{
+    color: #000;
+    border: 0px;
+    border-radius: 5px;
+}
+.btn{
+    border: 1px solid black;
+    margin: 10px;
+    color: #fff;
 }
