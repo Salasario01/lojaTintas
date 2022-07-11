@@ -21,13 +21,13 @@
 </head>
 <body>
 
-<a href="../index.html">
+<a href="../index.php">
 <button id="btn1">Voltar para o catálogo</button>
 </a>
-<a href="../php/comprasAndamentoFuncionarioForm.php">
+<a href="../php/cadastroFuncionarioForm.php">
 <button id="btn2">Cadastro de Funcionario</button>
 </a>
-<a href="../php/cadastroTintasForm.php">
+<a href="../php/comprasAndamentoFuncionarioForm.php">
 <button id="btn3">Compras em Andamento</button>
 </a>
 

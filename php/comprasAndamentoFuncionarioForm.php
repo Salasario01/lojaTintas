@@ -16,10 +16,10 @@
 </head>
 <body>
 
-<a href="../index.html">
+<a href="../index.php">
 <button>Voltar para o catálogo</button>
 </a>
-<a href="../php/comprasAndamentoFuncionarioForm.php">
+<a href="../php/cadastroFuncionarioForm.php">
 <button>Cadastro de Funcionario</button>
 </a>
 <a href="../php/cadastroTintasForm.php">

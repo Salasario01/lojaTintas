@@ -66,7 +66,7 @@
   <legend>Carrinho de compras</legend>
    <div id="tintas"> 
        <div class="tinta">
-            <select class="form-control" name="tintaCompra[]">
+            <select required class="form-control" name="tintaCompra[]">
             <option></option>
                 <?php 
                     require_once("conexaoBanco.php");
@@ -77,7 +77,7 @@
                 }
                 ?>
             </select>
-            <input type="number" name="quantidades[]" max="50" min="1">
+            <input required type="number" name="quantidades[]" maxlength="2" max="50" min="1">
 
             <button type="button" onclick="adicionarTinta()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
@@ -101,7 +101,7 @@
     <div>
          <label for="metodo">Metodo de pagamento</label>
 
-          <select name="metodo" id="metodo">
+          <select required name="metodo" id="metodo">
           <option value="boleto">Boleto</option>
           <option value="credito">Credito</option>
           </select>
