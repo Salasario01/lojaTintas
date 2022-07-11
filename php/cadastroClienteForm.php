@@ -36,15 +36,15 @@
                 <br>
                 <label class="label" >CPF</label>
                 <br>
-                <input type="text" class="input">
+                <input required type="text" class="input">
                 <br>
                 <label class="label" >Senha</label>
                 <br>
-                <input type="password" class="input">
+                <input required type="password" class="input">
                 <br>
                 <label class="label" >Nome Completo</label>
                 <br>
-                <input type="password" class="input">
+                <input required type="password" class="input">
                 <br>
                 <button type="submit" class="btn">
                     Enviar
