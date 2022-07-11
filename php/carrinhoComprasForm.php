@@ -128,7 +128,7 @@
 <?php 
 
 }else{
-	header("Location: alertaEfetuarLogin.html");
+	echo "esta pagina esta protegida";
 }
 
 ?>
