@@ -18,11 +18,11 @@
 </head>
 <body>
 
-<a href="../index.html">
+<a href="../index.php">
 <button>Voltar ao catálogo</button>
 </a>
 </a>
-<a href="../php/cadastroTintasForm.php">
+<a href="../php/comprasAndamentoClienteForm.php">
 <button>Compras em andamento</button>
 </a>
 

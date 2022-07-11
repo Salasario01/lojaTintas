@@ -15,10 +15,10 @@
 </head>
 <body>
 
-<a href="../index.html">
+<a href="../index.php">
 <button>Voltar para o catálogo</button>
 </a>
-<a href="../php/comprasAndamentoFuncionarioForm.php">
+<a href="../php/carrinhoComprasForm.php">
 <button>Ir para carrinho de compras</button>
 </a>
 
