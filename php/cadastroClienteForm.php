@@ -53,7 +53,7 @@
                 </div>
         </form>
 
-                <p>Já tem uma conta?<a href="../php/loginForm.php"> Faça Login</a></p>
+                <p>Já tem uma conta?<a id="aLink" href="../php/loginForm.php"> Faça Login</a></p>
                 
                 
 

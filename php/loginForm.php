@@ -54,10 +54,5 @@
     </div>
     </form>
 
-    <div class="footer">
-        <footer>
-            <p>Todos os direitos reservados - 2022 &copy;</p>
-        </footer>
-    </div>
 </body>
 </html>
