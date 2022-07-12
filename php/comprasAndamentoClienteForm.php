@@ -56,48 +56,43 @@
 
 	<?php } ?>
 </div>
+<fieldset>
+<h3 class="titulos">Compras efetuadas</h3>  
 
-<h3 class="titulos">Compra</h3>  
+<?php
+require_once("conexaoBanco.php");
+$comando="SELECT * FROM compras WHERE usuarios_idUsuario = ".$_SESSION["idUsuario"];
+//echo $comando;
+$resultado=mysqli_query($conexao, $comando);
+$compras = array();
 
-	<form action="cadastroTintas.php" method="POST" enctype="multipart/form-data">
-		<div class="form-group">
-		  <label class="control-label">Compra:</label>  
-		<div class="col-md-8">
-		<div class="form-group">
-		  <label class="control-label">Tinta1, Tinta2</label>  
-		<div class="col-md-8">
-		
-		</div>
-		</div>
-		
-		 <div class="form-group">
-		  <label class="control-label">Preço:</label>  
-		<div class="col-md-8">
-		 <div class="form-group">
-		  <label class="control-label">R$: 00,00</label>  
-		<div class="col-md-8">
-	
-		</div>
-		</div>
+while($c = mysqli_fetch_assoc($resultado)){
+	array_push($compras, $c);
+}
+$status = "Em andamento";
+foreach($compras as $c){
+	if($c['status']=="1"){
+		$status = "Em andamento";
+	}else if($c['status']=="2"){
+		$status = "Cancelado";
+	}else {
+		$status = "Entregue";
+	}
+	echo "<fieldset>
+	<legend> Compra </legend>
+	Status da entrega:".$status." 
+	<br> CEP: ".$c['cep']." 
+	<br>Método de pagamento: ".$c['metodoPagamento']." </fieldset>"; ?>
+	<form action="alterarStatus.php" method="POST">
+		<input type="hidden" name="idCompra" value="<?=$c['idCompra']?>">
+		<button type="submit" class="btn btn-danger">Cancelar compra </button>
+	</form>	
+	<?php
+	}
+?>
 
-        <div class="form-group">
-		  <label class="control-label">Estado da entrega:</label>  
-		<div class="col-md-8">
-        <div class="form-group">
-		  <label class="control-label">Em andamento</label>  
-		<div class="col-md-8">
-
-		</div>
-		</div>
-
-        <div class="form-group">
-		<label class="control-label"></label>
-		<div class="col-md-8">
-			<button  class="btn btn-danger" type="reset">Cancelar compra</button>		
-		</div>
-		</div>
-
-	</form>
+	<body>
+</html>	
 	<?php 
 
 }else{

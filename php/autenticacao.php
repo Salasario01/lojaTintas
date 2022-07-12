@@ -19,6 +19,7 @@
         $usuario=mysqli_fetch_assoc($resultado);
         session_start();
         $_SESSION['nivel']=$usuario['nivel'];
+        $_SESSION['idUsuario']=$usuario['idUsuario'];
 
         if($usuario['nivel']=='1'){ 
             //se ele for funcionario    

@@ -7,7 +7,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,66 +61,18 @@
 	<?php } ?>
 </div>
 
-<h3 class="titulos">Compra</h3>  
+<h3 class="titulos">Compras em andamento</h3>  
 
 	<form action="cadastroTintas.php" method="POST" enctype="multipart/form-data">
-		<div class="form-group">
-		  <label class="control-label">Nome do cliente:</label>  
-		<div class="col-md-8">
-		<div class="form-group">
-		  <label class="control-label">João Silva</label>  
-		<div class="col-md-8">
-		
-		</div>
-		</div>
-		
-		 <div class="form-group">
-		  <label class="control-label">Compra:</label>  
-		<div class="col-md-8">
-		 <div class="form-group">
-		  <label class="control-label">Tinta1, Tinta2</label>  
-		<div class="col-md-8">
-	
-		</div>
-		</div>
+		<php?
+	$comando = "SELECT * FROM  compras LIMIT $inicio, $qnt_result_pg";
+		$resultado_usuarios = mysqli_query($conn, $result_usuarios);
+		while($row_usuario = mysqli_fetch_assoc($resultado_usuarios)){
+			echo "ID: " . $row_usuario['id'] . "<br>";
+			echo "Nome: " . $row_usuario['nome'] . "<br>";
+			echo "E-mail: " . $row_usuario['email'] . "<br><hr>";
 
-		 <div class="form-group">
-		  <label class="control-label">Preço:</label>  
-		<div class="col-md-8">
-		 <div class="form-group">
-		  <label class="control-label">R$: 00,00</label>  
-		<div class="col-md-8">
-	
-		</div>
-		</div>
-
-        <div class="form-group">
-		  <label class="control-label">Estado da entrega:</label>  
-		<div class="col-md-8">
-        <div class="form-group">
-		  
-		<div class="col-md-8">
-
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-          <option selected>Em andamento</option>
-          <option value="1">Enviado</option>
-          <option value="2">Cancelado</option>
-          <option value="3">Entregue</option>
-        </select>
-
-        </div>
-		</div>
-
-		 <div class="form-group">
-		  <label class="control-label">Endereço de entrega:</label>  
-		<div class="col-md-8">
-		 <div class="form-group">
-		  <label class="control-label">Rua Brasil</label>  
-		<div class="col-md-8">
-	
-		</div>
-		</div>
-
+		?>
 	</form>
 
     <h4 class="titulos">Pesquisa</h4>
