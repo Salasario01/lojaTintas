@@ -104,8 +104,8 @@
          <label for="metodo">Metodo de pagamento</label>
 
           <select required name="metodo" id="metodo">
-          <option value="boleto">Boleto</option>
-          <option value="credito">Credito</option>
+          <option value="1">Boleto</option>
+          <option value="2">Credito</option>
           </select>
           <br> <br>
           <label >Cep</label>
