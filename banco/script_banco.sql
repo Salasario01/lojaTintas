@@ -78,7 +78,11 @@ VALUES (NULL, 'Tinta-Amarela Coral ', '160.00', '2022.07.08-01.33.07.jpg', '1', 
 (NULL, 'Tinta-Vermelha Novacor', '165.00', '2022.07.08-01.38.37.jpg', '8', '10')  
 
 INSERT INTO `usuarios` (`idUsuario`, `nomeUsuario`, `senha`, `nivel`, `nomeCompleto`, `cpf`) 
-VALUES (NULL, 'Gabriel123', '123456', '1', 'Gabriel Salasario', '41140342002'),
+VALUES (NULL, 'Gabriel', '123456', '1', 'Gabriel Salasario', '41140342002'),
 (NULL, 'Felipe', '123456', '2', 'felipe prim', '96285459061')
+
+
+INSERT INTO `compras` (`idCompra`, `metodoPagamento`, `cep`, `numero`, `observacao`, `status`, `usuarios_idUsuario`)
+VALUES (NULL, '1', '57297', '225', 'casa', '3', '3')
 ENGINE = InnoDB;
 
