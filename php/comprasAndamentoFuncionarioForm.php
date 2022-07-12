@@ -29,74 +29,69 @@
 <div id="alertas">
     <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <span>Houve algum problema ao cadastrar a tinta!</span>
+        <span>Houve algum problema ao definir a compra como entregue !</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
     <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
     <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <span>Tinta cadastrada com sucesso!</span>
+        <span>Compra definida como entrege com sucesso!</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
     <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==2){ ?>
 	<div class="alert alert-success alert-dismissible fade show" role="alert">
-        <span>Tinta excluída com sucesso!</span>
+        <span>2</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
 	<?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==3){ ?>
 	<div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <span>Não é possível excluir uma tinta associada a compromissos!</span>
+        <span>3</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
 	<?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==4){ ?>
 	<div class="alert alert-success alert-dismissible fade show" role="alert">
-        <span>Tinta editada com sucesso!</span>
+        <span>4</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
 	<?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==5){ ?>
 	<div class="alert alert-warning alert-dismissible fade show" role="alert">
-		<span>Houve algum problema ao editar a tinta!</span>
+		<span>5</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
 
 	<?php } ?>
 </div>
 
-<h3 class="titulos">Compras em andamento</h3>  
+<?php
+require_once("conexaoBanco.php");
+$comando="SELECT * FROM compras ";
 
-	<form action="cadastroTintas.php" method="POST" enctype="multipart/form-data">
-		<php?
-	$comando = "SELECT * FROM  compras LIMIT $inicio, $qnt_result_pg";
-		$resultado_usuarios = mysqli_query($conn, $result_usuarios);
-		while($row_usuario = mysqli_fetch_assoc($resultado_usuarios)){
-			echo "ID: " . $row_usuario['id'] . "<br>";
-			echo "Nome: " . $row_usuario['nome'] . "<br>";
-			echo "E-mail: " . $row_usuario['email'] . "<br><hr>";
+$resultado=mysqli_query($conexao, $comando);
+$compras = array();
 
-		?>
-	</form>
-
-    <h4 class="titulos">Pesquisa</h4>
-	
-	<form action="#" method="GET">
-		<div class="form-group">
-		  <label class="control-label" for="textoPesquisa">Nome do cliente</label>  			
-          </div>
-		</div>
-
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-          <option selected>João Silva</option>
-          <option value="1">Bruno Pereira</option>
-          <option value="2">Marcos da Silva</option>
-          <option value="3">Beatriz Gonçalves</option>
-        </select>
-			 <button type="submit" class="botaoAcao">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-				<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-				</svg>
-			 </button>			 
-		</div>
-	</form>
-
+while($c = mysqli_fetch_assoc($resultado)){
+	array_push($compras, $c);
+}
+$status = "Em andamento";
+foreach($compras as $c){
+	if($c['status']=="1"){
+		$status = "Em andamento";
+	}else if($c['status']=="2"){
+		$status = "Cancelado";
+	}else {
+		$status = "Entregue";
+	}
+	echo "<fieldset>
+	<legend> Compra </legend>
+	Status da entrega:".$status." 
+	<br> CEP: ".$c['cep']." 
+	<br>Método de pagamento: ".$c['metodoPagamento']." </fieldset>"; ?>
+	<form action="alterarStatus2.php" method="POST">
+		<input type="hidden" name="idCompra" value="<?=$c['idCompra']?>">
+		<button type="submit" class="btn btn-danger">Marcar compra como enviada  </button>
+	</form>	
+	<?php
+	}
+?>
 	<?php 
 
 }else{

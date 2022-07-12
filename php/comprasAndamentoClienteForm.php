@@ -25,12 +25,12 @@
 <div id="alertas">
     <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <span>Houve algum problema ao cadastrar a tinta!</span>
+        <span>Houve algum problema ao  cancelar a compra!</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
     <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
     <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <span>Tinta cadastrada com sucesso!</span>
+        <span>compra cancelada com sucesso!</span>
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
     <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==2){ ?>
