@@ -4,6 +4,7 @@
 }
 body{
     background-color: #2b78e4;
+    color: #fff;
 }
 .titulos{
     text-align: center;
@@ -21,4 +22,7 @@ body{
 #btn3{
     background-color: aqua;
     border: 2px solid black;
+}
+.table{
+    color: #fff;
 }

@@ -14,10 +14,7 @@
 
   <!-- Navbar -->
 <nav class="navbar navbar-light bg-primary">
-  <a class="navbar-brand" href="#">
-    <img src="" width="30" height="30" id="navbarCont" class="d-inline-block align-top" alt="">
-    Loja de Tintas
-  </a>
+  <h2>Loja de tintas</h2>
   <button id="navbarBtn" >
     <a class="btnEntrar" href="php/loginForm.php">
       Entrar
@@ -34,8 +31,8 @@
         <div class="card">
           <img src="img/tintaAmarela.jpg" height="180px" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Tinta Amarela</h5>
-            <p class="card-text">R$ 150,00</p>
+            <h5 class="card-title">Tinta-Amarela Coloral</h5>
+            <p class="card-text">R$ 160,00</p>
           </div>
         </div>
       </div>
@@ -44,8 +41,8 @@
         <div class="card">
           <img src="img/tintaAzul.jpg" height="180px" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Tinta </h5>
-            <p class="card-text">R$ 150,00</p>
+            <h5 class="card-title">Tinta-Azul Coral </h5>
+            <p class="card-text">R$ 180,00</p>
           </div>
         </div>
       </div>
@@ -54,8 +51,8 @@
         <div class="card">
           <img src="img/tintaBege.jpg" height="180px" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Tinta </h5>
-            <p class="card-text">R$ 150,00</p>
+            <h5 class="card-title">Tinta-Bege Suvinil </h5>
+            <p class="card-text">R$ 120,00</p>
           </div>
         </div>
       </div>
@@ -64,8 +61,8 @@
         <div class="card">
           <img src="img/tintaCinza.jpg" height="180px" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Tinta </h5>
-            <p class="card-text">R$ 150,00</p>
+            <h5 class="card-title">Tinta-Cinza Coral </h5>
+            <p class="card-text">R$ 135,00</p>
           </div>
         </div>
       </div>
@@ -74,8 +71,8 @@
         <div class="card">
           <img src="img/tintaLaranja.jpg" height="180px" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Tinta </h5>
-            <p class="card-text">R$ 150,00</p>
+            <h5 class="card-title">Tinta-Laranja Suvinil </h5>
+            <p class="card-text">R$ 159,00</p>
           </div>
         </div>
       </div>
@@ -84,8 +81,8 @@
         <div class="card">
           <img src="img/tintaPreta.jpg" height="180px" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Tinta </h5>
-            <p class="card-text">R$ 150,00</p>
+            <h5 class="card-title">Tinta-Preta Novacor </h5>
+            <p class="card-text">R$ 129,00</p>
           </div>
         </div>
       </div>
@@ -94,8 +91,8 @@
         <div class="card">
           <img src="img/tintaVerde.jpg" height="180px" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Tinta </h5>
-            <p class="card-text">R$ 150,00</p>
+            <h5 class="card-title">Tinta-Verde-Água Suvinil </h5>
+            <p class="card-text">R$ 209,00</p>
           </div>
         </div>
       </div>
@@ -104,8 +101,8 @@
         <div class="card">
           <img src="img/tintaVermelha.jpg" height="180px" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Tinta </h5>
-            <p class="card-text">R$ 150,00</p>
+            <h5 class="card-title">Tinta Vermelha Novacor</h5>
+            <p class="card-text">R$ 165,00</p>
           </div>
         </div>
       </div>

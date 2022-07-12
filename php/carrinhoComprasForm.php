@@ -15,15 +15,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
     <script src="../js/tintas.js"> </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/carrinhoCompras.css">
 </head>
 <body>
 
 <a href="../index.php">
-<button>Voltar ao catálogo</button>
+<button class="btn btn-danger">Voltar ao catálogo</button>
 </a>
 </a>
 <a href="../php/comprasAndamentoClienteForm.php">
-<button>Compras em andamento</button>
+<button class="btn btn-warning">Compras em andamento</button>
 </a>
 
 <div id="alertas">
@@ -66,7 +68,7 @@
   <legend>Carrinho de compras</legend>
    <div id="tintas"> 
        <div class="tinta">
-            <select required class="form-control" name="tintaCompra[]">
+            <select required class="selectTintas form-control" name="tintaCompra[]">
             <option></option>
                 <?php 
                     require_once("conexaoBanco.php");
@@ -107,18 +109,21 @@
           </select>
           <br> <br>
           <label >Cep</label>
+          <br>
           <input required type="text" name="cep" minlength="8" maxlength="8">                
           <br>  <br>
-          <label >numero</label>
+          <label >Número</label>
+          <br>
           <input required type="number" name="numero" maxlength="3" minlength="1" >
           <br> <br>
-          <label >observacao </label>
+          <label >Observacao </label>
+          <br>
           <input required type="text" name="observacao" >
           <br> <br>
 
 
     </div>
-          <button type="submit">Finalizar compra</button>
+          <button class="btn btn-success"type="submit">Finalizar compra</button>
    </fieldset>
     </form>
  
